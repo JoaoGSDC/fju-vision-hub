@@ -85,10 +85,12 @@ export default function CentralFJU() {
             <Link
               href={MAPS_URL}
               target="_blank"
+              rel="noopener noreferrer"
+              passHref
               className="inline-flex items-center gap-2 px-5 py-3 font-semibold"
               style={{ backgroundColor: "#b32b2b", color: "#ffffff" }}
             >
-              Como chegar
+              <a>Como chegar</a>
             </Link>
           </div>
         </div>
