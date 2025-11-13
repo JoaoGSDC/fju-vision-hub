@@ -64,7 +64,7 @@ export default function ProjectsGrid() {
       <div className="container mx-auto px-4 py-10">
         <div className="flex flex-nowrap items-start gap-6 overflow-x-auto no-scrollbar justify-center">
           {projects.map((p) => (
-            <Link key={p.title} href={p.href} className="group flex-shrink-0 flex flex-col items-center gap-2">
+            <Link key={p.title} href={p.href as any} className="group flex-shrink-0 flex flex-col items-center gap-2">
               <div className="w-24 h-24 md:w-28 md:h-28 rounded-full overflow-hidden bg-muted shadow-md">
                 <Image
                   src={p.image}
