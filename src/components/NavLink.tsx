@@ -1,7 +1,7 @@
 import Link, { LinkProps } from "next/link";
 import { cn } from "@/lib/utils";
 
-type NavLinkProps = LinkProps & {
+type NavLinkProps = LinkProps<any> & {
   className?: string;
   children?: React.ReactNode;
   href: LinkProps["href"];
